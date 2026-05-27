@@ -16,6 +16,34 @@ This project is an offline evaluation and iteration tool for existing AI Assista
 
 The first version does not implement RAG or Agent. It can evaluate outputs produced by an existing RAG or ReAct-style AI Assistant and help product or operations teams decide what to improve next.
 
+## Demo Preview
+
+The screenshots below show the main workflow of AI Product & Ops Copilot: from batch-level overview, bad case analysis, priority triage, to final report generation.
+
+### Overview Dashboard
+
+![Overview Dashboard](assets/screenshots/overview_dashboard.png)
+
+The overview page summarizes the current feedback batch, including total cases, valid cases, duplicate cases, bad case count, high-priority cases, average user rating, and issue distribution.
+
+### Bad Case Analysis
+
+![Bad Case Analysis](assets/screenshots/bad_case_analysis.png)
+
+The bad case analysis page identifies where existing AI Assistant answers may fail, such as missing steps, missing system entry, generic answers, failed human escalation, or hallucination risk.
+
+### Priority Scoring
+
+![Priority Scoring](assets/screenshots/priority_scoring.png)
+
+The priority page converts detected issues into operational handling priorities, showing which issues should be handled first, which team should own them, and what next action is recommended.
+
+### Report Generator
+
+![Report Generator](assets/screenshots/report_generator.png)
+
+The report generator creates a business-readable Markdown report for AI Assistant MVP review, HR/IT/Product iteration meetings, B2B operations reviews, or product operations retrospectives.
+
 ## Project Motivation
 
 Many AI product and operations teams can collect feedback, but they still struggle to convert raw evaluation records into repeatable execution. This project demonstrates a practical interview-ready MVP: upload structured records, run a deterministic analysis pipeline, and generate an explainable report without depending on an external API.
